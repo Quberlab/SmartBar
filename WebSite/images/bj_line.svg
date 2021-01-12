@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="479px" viewBox="0 0 1000 479" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bj_line</title>
+    <defs>
+        <linearGradient x1="50%" y1="-8.74671237%" x2="50%" y2="29.0757225%" id="linearGradient-1">
+            <stop stop-color="#0098FF" offset="0%"></stop>
+            <stop stop-color="#0098FF" offset="0%"></stop>
+            <stop stop-color="#00F7FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI设计" transform="translate(-920.000000, -601.000000)" stroke="url(#linearGradient-1)" stroke-width="100">
+            <g id="bj_line" transform="translate(595.000000, 490.000000)">
+                <ellipse id="椭圆形" cx="959.5" cy="1310" rx="909.5" ry="909"></ellipse>
+                <ellipse id="椭圆形备份" cx="1773.5" cy="959" rx="909.5" ry="909"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

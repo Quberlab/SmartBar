@@ -1,0 +1,117 @@
+/* QuberLab & Advanced experience laboratory */
+/* Written by Kilion in 2020.01.11*/
+body{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    overflow: hidden;
+}
+.bottom_img{
+    position: absolute;
+    bottom: -.2rem;
+    right: 0;
+    width: 3.8rem;
+
+}
+.bottom_img img{
+    width: 100%;
+
+}
+#about_body{
+
+    position: absolute;
+
+    margin-top: 1rem;
+}
+.about_header{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.icon_about{
+    width: 1rem !important
+}
+.about_header,.about_box{
+    width: 94%;
+    margin: 0 auto;
+}
+.about_header li{
+    display: block !important;
+    font-size: .15rem;
+    width: 4rem;
+    font-weight: bold;
+    margin-bottom: .2rem;
+}
+.about_box {
+    margin-top: .3rem;
+}
+.about_box li{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 23%;
+    height: 1.3rem;
+    padding: .2rem !important;
+    border-radius: 20px;
+    display: inline-block;
+    width: 33%;
+
+    transition: .2s ease-in-out;
+}
+.about_box li:hover{
+    background-color: white;
+    margin-top: -.05rem;
+    box-shadow: 0 1px 85px 0 rgba(0,0,0,0.05);
+}
+/* .about_box li:hover  .about_box_title p{
+    font-size: .21rem;
+    color: #0098FF;
+} */
+
+.about_box_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: .2rem;
+    cursor: default;
+    height: .5rem;
+}
+.about_box_title img{
+    width: .4rem !important;
+    transition: .2s ease-in-out;
+}
+.about_box_title p{
+    font-weight: bold;
+    font-size: .2rem;
+    cursor: default;
+    color: black;
+    transition: .2s ease-in-out;
+}
+.about_box_text{
+    font-size: .117rem;
+    line-height: .17rem;
+    cursor: default;
+}
+.news{
+    position: absolute;
+    z-index: 13;
+    bottom: .35rem;
+    width: 94%;
+    margin: 0 auto;
+    left: .35rem;
+    display: flex;
+}
+.news img:nth-child(1){
+    width: .15rem;
+    padding-right: .04rem;
+}
+
+.news img:last-child{
+    width: .06rem;
+    padding-left: .04rem;
+}

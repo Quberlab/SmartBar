@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="105px" viewBox="0 0 88 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_num_1</title>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="16.1526144%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0098FF" offset="0%"></stop>
+            <stop stop-color="#00E9FF" stop-opacity="0.237921456" offset="59.2236595%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="41.3457031 88 41.3457031 43.8613281 35.0185547 43.8613281 28.7519531 48.4326172 28.7519531 55.1533203 35.0185547 50.5517578 35.0185547 88"></polygon>
+        <filter x="-131.0%" y="-19.3%" width="362.0%" height="177.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="9" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-57.000000, -439.000000)">
+            <g id="icon_num_1" transform="translate(57.000000, 439.000000)">
+                <circle id="椭圆形" fill="url(#linearGradient-1)" cx="44" cy="44" r="44"></circle>
+                <g id="1" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#000000" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

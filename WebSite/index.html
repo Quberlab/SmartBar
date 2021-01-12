@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBar - QuberLab</title>
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@4.5.1/dist/js/swiper.min.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="pop_ui_bj" id="pop_ui_bj">
+        <div class="box">
+            <div class="btn_back" onclick="close_bj()">
+                <img src="./images/icon_right.svg" alt="">
+                <h1>返回</h1>
+            </div>
+            <div class="pop_ui_show_bj">
+                <div class="pop_ui">
+                    <div class="pop_left_img">
+                        <img src="./images/more_icon_ui_animate.svg" alt="">
+                    </div>
+                    <div class="pop_right_text">
+                        <h1>UI设计</h1>
+                        <p>SmartBar将以人机交互体验为中心，构建完善界面改善编程体验。</p>
+                        <h5>您可以在Sketch/Figma上参与创作，也可给我们 <em>留意见</em></h5>
+                        <div class="pop_right_text_ui_btn">
+                            <div class="btn_go_sketch">
+                                Sketch Cloud <img src="./images/icon_right_sketch.svg" alt="">
+                            </div>
+                            <div class="btn_go_figma">
+                                Figma <img src="./images/icon_right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="box">
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <div class="nav_link">
+                <ul>
+                    <li class="nav_link"><a href="#"><img src="./images/nav_icon_home.svg" alt="">
+                            <h4 class="select">首页</h4>
+                        </a></li>
+                    <li><a href="./about.html">
+                            <h4>关于</h4>
+                        </a></li>
+                    <li><a href="#">
+                            <h4>社区</h4>
+                        </a></li>
+                    <li><a href="#">
+                            <h4>文档</h4>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box flex_direction">
+                    <div class="index_title">
+                        <img src="./images/index_title.svg" alt="">
+                        <div class="btn_more flex_setting">
+                            <h4>了解更多</h4>
+                            <img src="./images/icon_right.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="show_img">
+                        <img src="./images/index_showbar.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex_direction">
+                <div class="left_title">
+                    <h4>最新进展</h4>
+                    <div class="progress_number">
+                        <span>1</span>
+                        <span>/ 3</span>
+                    </div>
+                </div>
+                <ul class="progress">
+                    <li onclick="show_bj()">
+                        <img src="./images/more_icon_ui.svg" alt="">
+                        <h4>UI设计</h4>
+                        <p>SmartBar将以人机交互体验为中心，构建完善界面改善编程体验</p>
+                        <div class="btn_ui_share">
+                            <h4>欢迎参与</h4>
+                            <img src="./images/icon_right.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/more_icon_code.svg" alt="">
+                        <h4>代码构建</h4>
+                        <p>我们将采用中文编程作为底层构建代码并公开，欢迎二次开发</p>
+                        <div class="btn_ui_share">
+                            <h4 style="color:#999 ;">期待...</h4>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/more_icon_ab.svg" alt="">
+                        <h4>A&B轮公测</h4>
+                        <p>届时欢迎各位开发者齐聚一堂，为SmartBar添砖加瓦，一起构建知识体系</p>
+                        <div class="btn_ui_share">
+                            <h4 style="color:#999 ;">期待...</h4>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/right_title.svg" alt="">
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            followFinger: false,
+            speed: 600,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.btn_more',
+
+            }, //前进后退箭头
+            on: {
+                init: function (swiper) {
+                    slide = this.slides.eq(0);
+                    slide.addClass('ani-slide');
+                },
+                transitionStart: function () {
+                    for (i = 0; i < this.slides.length; i++) {
+                        slide = this.slides.eq(i);
+                        
+                    }
+                },
+                transitionEnd: function () {
+                    slide = this.slides.eq(this.activeIndex);
+
+
+                },
+            }
+        });
+
+        function show_bj() {
+            var pop_ui_bj_js = document.getElementById("pop_ui_bj");
+            pop_ui_bj_js.classList.remove("close_bj")
+            pop_ui_bj_js.classList.add("show_bj")
+        }
+
+        function close_bj() {
+            var pop_ui_bj_js = document.getElementById("pop_ui_bj");
+            pop_ui_bj_js.classList.add("close_bj")
+            pop_ui_bj_js.classList.remove("show_bj")
+        }
+
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                
+                if (pair[0] == variable) {
+                    
+                    return pair[1];
+
+                }
+            }
+            return (false);
+        }
+
+
+
+        function getPageNum() {
+            if (getQueryVariable("page") == "2") {
+                swiper.slideTo(2, 500, false)
+            }
+        }
+        getPageNum();
+    </script>
+</body>
+
+</html>

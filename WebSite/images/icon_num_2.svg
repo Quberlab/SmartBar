@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="105px" viewBox="0 0 88 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_num_2</title>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="16.1526144%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0098FF" offset="0%"></stop>
+            <stop stop-color="#00E9FF" stop-opacity="0.237921456" offset="59.2236595%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M50.1552734,88 L50.1552734,81.6728516 L33.2929688,81.6728516 L47.4912109,63.8720703 C49.2672526,61.6116536 50.1552734,59.0283203 50.1552734,56.1220703 C50.1149089,52.4892578 48.8938802,49.4921875 46.4921875,47.1308594 C44.1308594,44.749349 41.0530599,43.5384115 37.2587891,43.4980469 C33.8681641,43.5384115 31.0123698,44.7291667 28.6914062,47.0703125 C26.390625,49.4720052 25.1595052,52.5094401 24.9980469,56.1826172 L31.2949219,56.1826172 C31.5169271,54.164388 32.2233073,52.6002604 33.4140625,51.4902344 C34.5644531,50.3802083 36.007487,49.8251953 37.7431641,49.8251953 C39.7008464,49.8655599 41.2145182,50.5013021 42.2841797,51.7324219 C43.3134766,52.9635417 43.828125,54.4065755 43.828125,56.0615234 C43.828125,56.6871745 43.7473958,57.3531901 43.5859375,58.0595703 C43.34375,58.8063151 42.8896484,59.6136068 42.2236328,60.4814453 L24.9980469,82.0361328 L24.9980469,88 L50.1552734,88 Z" id="path-2"></path>
+        <filter x="-65.6%" y="-19.1%" width="231.2%" height="176.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="9" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-174.000000, -439.000000)">
+            <g id="icon_num_2" transform="translate(174.000000, 439.000000)">
+                <circle id="椭圆形" fill="url(#linearGradient-1)" cx="44" cy="44" r="44"></circle>
+                <g id="2" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#000000" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
